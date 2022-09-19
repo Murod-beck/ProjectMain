@@ -25,7 +25,7 @@ const firebaseConfig = {
   projectId: 'projectoscrm',
   storageBucket: 'projectoscrm.appspot.com',
   messagingSenderId: '788639159202',
-  appId: '1:788639159202:web:ccc8da2139a8451ab398fb',
+  appId: process.env.VUE_APP_API_ID,
 };
 
 const apps = initializeApp(firebaseConfig);
