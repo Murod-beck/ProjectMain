@@ -18,14 +18,14 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCsuxgWl1y49kQez7b3Vz7jic1bBu24n5A',
-  authDomain: 'projects-m-28a3c.firebaseapp.com',
+  apiKey: process.env.VUE_APP_API_KEY,
+  authDomain: 'projectoscrm.firebaseapp.com',
   databaseURL:
-    'https://projects-m-28a3c-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'projects-m-28a3c',
-  storageBucket: 'gs://projects-m-28a3c.appspot.com',
-  messagingSenderId: '217037928884',
-  appId: '1:217037928884:web:33ac1fbb375471b0df1ae1',
+    'https://projectoscrm-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: 'projectoscrm',
+  storageBucket: 'projectoscrm.appspot.com',
+  messagingSenderId: '788639159202',
+  appId: '1:788639159202:web:ccc8da2139a8451ab398fb',
 };
 
 const apps = initializeApp(firebaseConfig);
